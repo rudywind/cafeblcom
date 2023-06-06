@@ -4,8 +4,8 @@ body a {
 
 #post-body iframe {
 	width: 100% !important;
-	height: 240px !important;
-	margin-bottom: 1em;
+	height: 200px !important;
+	margin-bottom: 1em !important;
 }
 
 .head2 {
