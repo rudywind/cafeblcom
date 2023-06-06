@@ -2,10 +2,11 @@ body a {
 	text-decoration: none !important;
 }
 
-#post-body iframe {
+#post-body > iframe {
 	width: 100% !important;
 	height: 200px !important;
 	margin-bottom: 1em !important;
+	padding-bottom:1em !important;
 }
 
 .head2 {
