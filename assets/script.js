@@ -16,3 +16,12 @@ var birthDateStr = $("#lahir").text();
 var birthDate = new Date(birthDateStr);
 var age = calculateAge(birthDate);
 $("#usia").text("("+ age + " Tahun)");
+
+
+var images = document.getElementsByTagName('img');
+for (var i = 0; i < images.length; i++) {
+  images[i].onerror = function() {
+    this.onerror = null;
+    this.src = 'https://1.bp.blogspot.com/-rI4UCIrwEI4/YN3nGkf0nCI/AAAAAAAAAD0/DQ6fW7eCps8NL7S0oh374KFg1MsWUf2GQCLcBGAsYHQ/s72-c/ptb-nth.png';
+  };
+}
