@@ -1,1 +1,49 @@
-
+{
+  "name": "CAFE BL",
+  "short_name": "CAFEBL",
+  "description": "Sumber berita LGBTQ+ Terkini",
+  "icons": [{
+    "src": "https://rudywind.github.io/cafeblcom/image/cbl-icon.png",
+    "sizes": "48x48 40x40",
+    "type": "image/png"
+  }, {
+    "src": "https://rudywind.github.io/cafeblcom/image/cbl-icon.png",
+    "sizes": "72x72 60x60 58x58",
+    "type": "image/png"
+  }, {
+    "src": "https://rudywind.github.io/cafeblcom/image/cbl-icon.png",
+    "sizes": "96x96 87x87 80x80",
+    "type": "image/png"
+  }, {
+    "src": "https://rudywind.github.io/cafeblcom/image/cbl-icon.png",
+    "sizes": "144x144 120x120",
+    "type": "image/png"
+  }, {
+    "src": "https://rudywind.github.io/cafeblcom/image/cbl-icon.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "https://rudywind.github.io/cafeblcom/image/cbl-icon.png",
+    "sizes": "192x192 180x180",
+    "type": "image/png"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#4285F4",
+  "start_url": "/?utm_medium=manifest",
+  "display": "standalone",
+  "permissions": [
+    "https://*.cafebl.com/*",
+    "webRequest",
+      "webRequestBlocking",
+      "cookies"
+  ],
+  "content_scripts" : [
+    {
+      "matches" : [
+          "http://*.cafebl.com/*",
+          "https://*.cafebl.com/*"
+      ],
+      "all_frames" : true
+    }
+  ]
+}
