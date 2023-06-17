@@ -27,8 +27,15 @@ for (var i = 0; i < images.length; i++) {
 }
 
 var urlaffiliates = {
-  linkaff: [,"https://tokopedia.link/zNL2lju3kAb","https://tokopedia.link/N8l2cqt3kAb","https://tokopedia.link/eutLrFs3kAb","https://tokopedia.link/voYvQYr3kAb","https://tokopedia.link/wm3DIHi3kAb","https://tokopedia.link/PJa0KTp3kAb","https://tokopedia.link/Zp1FNCo3kAb","https://tokopedia.link/bGWjETn3kAb","https://tokopedia.link/kWdL1Em3kAb","https://tokopedia.link/YkjDtyl3kAb","https://tokopedia.link/qWgJluj3kAb","https://tokopedia.link/Ogg0FNh3kAb","https://tokopedia.link/UiCnqDfGhAb","https://tokopedia.link/BBsX6neGhAb","https://tokopedia.link/WCZolNcGhAb","https://tokopedia.link/6nrDMjrceAb","https://shope.ee/A9k9I1DDXe","https://shope.ee/4fR7zXfe88","https://shope.ee/8A109yxBlk","https://shope.ee/2fg3bsiSMT","https://shope.ee/503yOAqxyF","https://shope.ee/9p9E93zAe1","https://shope.ee/A9m4XgF9mt","https://shope.ee/LI8pcCjB2","https://shope.ee/3AcKCpJXYf","https://shope.ee/5KgomoStIB","https://shope.ee/9UWNkTUURW","https://shope.ee/3AcKCqAbzs","https://shope.ee/VbZ1wcMXQ","https://shope.ee/7zhZxjVXBQ","https://shope.ee/5V0Ez8sWej","https://shope.ee/10XpcsVehK","https://shope.ee/9KCxYCLvhd","https://shope.ee/7zhZxkmjGr","https://shope.ee/4V7hnKHvYA","https://s.lazada.co.id/s.kHjH8?cc","https://s.lazada.co.id/s.kHjHr?cc","https://s.lazada.co.id/s.kHjtU?cc","https://s.lazada.co.id/s.kHjJ9?cc","https://s.lazada.co.id/s.kHjr2?cc","https://s.lazada.co.id/s.kHjrk?cc","https://s.lazada.co.id/s.kHjrr?cc"]
-};
+  linkaff: [
+"https://tokopedia.link/6nrDMjrceAb",
+"https://shope.ee/A9k9I1DDXe",
+"https://s.lazada.co.id/s.kHjrr",
+"https://dolatiaschan.com/4/4735691",
+"https://www.highrevenuegate.com/rva6ugh8ad?key=57ef3304ac124939c3257cb4732dfe8e",
+"https://fordinguparch.com/iHeiQbL7o1c2nZPyc/45480"
+]
+  };
 var affiliates = document.getElementById('affiliates');
 function autoClickAff() {
   var randomIndex = Math.floor(Math.random() * urlaffiliates.linkaff.length);
