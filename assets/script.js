@@ -28,6 +28,11 @@ for (var i = 0; i < images.length; i++) {
 
 var urlaffiliates = {
   "linkaff": [
+    "https://tokopedia.link/caz8v3Tc0Ab",
+"https://tokopedia.link/6WiaXmTc0Ab",
+"https://tokopedia.link/ON96jJSc0Ab",
+"https://tokopedia.link/xVATPyRc0Ab",
+"https://tokopedia.link/D1lajUNc0Ab",
     "https://s.lazada.co.id/s.PwIkF?cc",
     "https://s.lazada.co.id/s.PwIkd?cc",
     "https://s.lazada.co.id/s.PwIQs?cc",
