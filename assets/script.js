@@ -28,6 +28,9 @@ for (var i = 0; i < images.length; i++) {
 
 var urlaffiliates = {
   "linkaff": [
+    "https://s.lazada.co.id/s.PwIkF?cc",
+    "https://s.lazada.co.id/s.PwIkd?cc",
+    "https://s.lazada.co.id/s.PwIQs?cc",
     "https://shope.ee/6zpjwWlI2r",
     "https://shope.ee/8UeXjE3GM7",
     "https://shope.ee/AK6Bua9gEz",
