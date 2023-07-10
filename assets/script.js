@@ -17,6 +17,23 @@ var birthDate = new Date(birthDateStr);
 var age = calculateAge(birthDate);
 $("#usia").text("("+ age + " Tahun)");
 
+function calculateAgeTwo(birthDate) {
+    var ageMS = Date.now() - birthDate.getTime();
+    var ageDate = new Date(ageMS);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+  window.onload = function() {
+    var birthDateStr = document.getElementById("umur").getAttribute("lahir");
+    var birthDateParts = birthDateStr.split("-");
+    var birthDate = new Date(
+      parseInt(birthDateParts[2]),
+      parseInt(birthDateParts[1]) - 1,
+      parseInt(birthDateParts[0])
+    );
+    var age = calculateAgeTwo(birthDate);
+    document.getElementById("umur").textContent = age + " Tahun";
+  };
+
 
 var images = document.getElementsByTagName('img');
 for (var i = 0; i < images.length; i++) {
