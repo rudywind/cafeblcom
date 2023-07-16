@@ -97,7 +97,19 @@ var urlaffiliates = {
     "https://shope.ee/1ArwzNijWo",
     "https://shope.ee/6Ka38ryjbf",
     "https://shope.ee/4plFM6iJDP",
-    "https://shope.ee/7KSaKeiwMa"
+    "https://shope.ee/7KSaKeiwMa",
+    "https://shope.ee/6Uu7eHua5r",
+"https://shope.ee/7f652RCCu2",
+"https://shope.ee/3fZwH5rLsk",
+"https://shope.ee/7Umeq8zAa8",
+"https://shope.ee/2Al8ULjSWu",
+"https://shope.ee/AUQGPfa978",
+"https://shope.ee/5fL0enEXpA",
+"https://shope.ee/4V93GewaEn",
+"https://shope.ee/8KLlpiQ3Xd",
+"https://shope.ee/3Kx5sX90Xz",
+"https://shope.ee/6pWy2yQtUn",
+"https://shope.ee/3AdfgFVEl1",
   ]
 };
 var affiliates = document.getElementById('affiliates');
@@ -164,7 +176,19 @@ var urlaffiliates = {
     "https://shope.ee/1ArwzNijWo",
     "https://shope.ee/6Ka38ryjbf",
     "https://shope.ee/4plFM6iJDP",
-    "https://shope.ee/7KSaKeiwMa"
+    "https://shope.ee/7KSaKeiwMa",
+    "https://shope.ee/6Uu7eHua5r",
+"https://shope.ee/7f652RCCu2",
+"https://shope.ee/3fZwH5rLsk",
+"https://shope.ee/7Umeq8zAa8",
+"https://shope.ee/2Al8ULjSWu",
+"https://shope.ee/AUQGPfa978",
+"https://shope.ee/5fL0enEXpA",
+"https://shope.ee/4V93GewaEn",
+"https://shope.ee/8KLlpiQ3Xd",
+"https://shope.ee/3Kx5sX90Xz",
+"https://shope.ee/6pWy2yQtUn",
+"https://shope.ee/3AdfgFVEl1",
   ]
 };
   var linkaff = urlaffiliates.linkaff;
