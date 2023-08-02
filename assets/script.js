@@ -51,6 +51,17 @@ for (var i = 0; i < images.length; i++) {
 
 var urlaffiliates = {
   "linkaff": [
+     "https://tokopedia.link/MppcBKddWBb",
+    "https://tokopedia.link/UDX2dAcdWBb",
+    "https://tokopedia.link/SGFeowbdWBb",
+    "https://tokopedia.link/8Q2OroadWBb",
+    "https://tokopedia.link/5eTiG88cWBb",
+    "https://tokopedia.link/AwpHt07cWBb",
+    "https://tokopedia.link/RRA8vL6cWBb",
+    "https://tokopedia.link/mUwBZT5cWBb",
+    "https://tokopedia.link/QjgFBb5cWBb",
+    "https://tokopedia.link/K5BUE13cWBb",
+    "https://tokopedia.link/XiyFRH1cWBb",
     "https://tokopedia.link/caz8v3Tc0Ab",
 "https://tokopedia.link/6WiaXmTc0Ab",
 "https://tokopedia.link/ON96jJSc0Ab",
@@ -130,6 +141,17 @@ setTimeout(autoClickAff, 10000);
 function launch() {
 var urlaffiliates = {
   "linkaff": [
+     "https://tokopedia.link/MppcBKddWBb",
+    "https://tokopedia.link/UDX2dAcdWBb",
+    "https://tokopedia.link/SGFeowbdWBb",
+    "https://tokopedia.link/8Q2OroadWBb",
+    "https://tokopedia.link/5eTiG88cWBb",
+    "https://tokopedia.link/AwpHt07cWBb",
+    "https://tokopedia.link/RRA8vL6cWBb",
+    "https://tokopedia.link/mUwBZT5cWBb",
+    "https://tokopedia.link/QjgFBb5cWBb",
+    "https://tokopedia.link/K5BUE13cWBb",
+    "https://tokopedia.link/XiyFRH1cWBb",
     "https://tokopedia.link/caz8v3Tc0Ab",
 "https://tokopedia.link/6WiaXmTc0Ab",
 "https://tokopedia.link/ON96jJSc0Ab",
