@@ -225,3 +225,39 @@ var urlaffiliates = {
 
   window.open(randomUrl);
 }
+
+
+
+      // Daftar ad-slot dalam format JSON  	
+      var adSlots = [
+        "6825108939",
+        "7946618914",
+        "1381210564",
+        "6441965556"
+      ];
+
+      // Fungsi untuk mendapatkan nilai acak dari daftar ad-slot
+      function getRandomAdSlot() {
+        var randomIndex = Math.floor(Math.random() * adSlots.length);
+        return adSlots[randomIndex];
+      }
+
+      // Fungsi untuk menyisipkan iklan di antara setiap dua tag <p>
+      function insertAds() {
+        var paragraphs = document.getElementById("post-body").getElementsByTagName("p");
+        var adCount = 1;
+        for (var i = 2; i < paragraphs.length; i += 3) {
+          var ad = document.createElement("ins");
+          ad.className = "adsbygoogle";
+          ad.style.display = "block";
+          ad.setAttribute("data-ad-client", "ca-pub-9831863639748913");
+          ad.setAttribute("data-ad-slot", getRandomAdSlot());
+          ad.setAttribute("data-ad-format", "auto");
+          ad.setAttribute("data-full-width-responsive", "true");
+          paragraphs[i].parentNode.insertBefore(ad, paragraphs[i]);
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      }
+      // Panggil fungsi saat halaman dimuat
+      window.onload = insertAds;   
+  
