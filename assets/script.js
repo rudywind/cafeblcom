@@ -124,7 +124,7 @@ setTimeout(autoClickAff, 10000);
 
 function launch() {
 var urlaffiliates = {
-  "linksaff": [
+  "linkaff": [
     "https://shope.ee/A9oISH1uwF",
     "https://shope.ee/3puEucmV0c",
     "https://shope.ee/9UYbf25GuS",
