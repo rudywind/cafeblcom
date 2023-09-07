@@ -196,3 +196,26 @@ var urlaffiliates = {
 
 
 
+        const postBodyImages = document.querySelectorAll('#post-body img');
+
+        // Menggabungkan gambar dari kedua elemen ke dalam satu array
+        const allImages = postBodyImages;
+
+        // Mengecek jumlah total gambar
+        if (allImages.length > 10) {
+            // Membuat elemen div untuk menampilkan gambar
+            const thumbnailArticle = document.querySelector('.thumbnail__article');
+            
+            // Melooping gambar dimulai dari gambar ke-2
+            for (let i = 1; i < allImages.length; i++) {
+                const img = document.createElement('img');
+                img.src = allImages[i].src;
+                thumbnailArticle.appendChild(img);
+                
+                // Hanya menampilkan 10 gambar
+                if (i === 6) {
+                    break;
+                }
+            }
+        }
+    
