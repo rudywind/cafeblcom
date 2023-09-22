@@ -131,3 +131,55 @@ var urlaffiliates = {
             }
         }
     
+
+document.addEventListener("DOMContentLoaded", function() {
+    const feedContainer = document.getElementById("cafebl-int-content");
+    const feedNav = document.getElementById("cafebl-int-button-load-more");
+    const maxResults = 12;
+    let startIndex = 1;
+    
+    function loadContent(tag, order) {
+        const url = `http://int.cafebl.com/feeds/posts/summary/${tag || ''}?alt=json-in-script&start-index=${startIndex}&max-results=${maxResults}&orderby=${order}&callback=loadContentCallback`;
+        const script = document.createElement("script");
+        script.src = url;
+        document.head.appendChild(script);
+    }
+
+    window.loadContentCallback = function(json) {
+        const entries = json.feed.entry || [];
+        let contentHTML = "";
+
+        for (const entry of entries) {
+            const title = entry.title.$t;
+            const summary = entry.summary ? entry.summary.$t.replace(/<br ?\/?>/ig, " ").replace(/<(.*?)>/g, "").replace(/<iframe/ig, "").substring(0, 150) : "";
+            const thumbnail = entry.media$thumbnail ? entry.media$thumbnail.url.replace(/\/s[0-9]+\-c/, "/s300") : "http://2.bp.blogspot.com/-11FkySHGB5Y/TpZ6SSbsF2I/AAAAAAAAA94/zK10UaL7jgo/s1600/images.jpeg";
+            const link = entry.link.find(link => link.rel === "alternate").href;
+
+            contentHTML += `
+                <div class="media mb-2 d-flex align-items-center">
+                    <img class="mr-2 rounded shadow" style="object-fit: cover; width: 100px; height: 80px;" src="${thumbnail}" alt="${title}">
+                    <div class="media-body">
+                        <a class="text-dark" href="${link}" target="_blank" title="${title}">${title}</a> 
+                    </div>                 
+                </div>
+            `;
+        }
+
+        feedContainer.innerHTML += contentHTML;
+        startIndex += maxResults;
+
+        if (entries.length < maxResults) {
+            feedNav.innerHTML = "No more content";
+        } else {
+            feedNav.innerHTML = `
+                <a href="#" id="load-more" class="btn btn-primary btn-sm btn-block">Load More</a>
+            `;
+            document.getElementById("load-more").addEventListener("click", function(event) {
+                event.preventDefault();
+                loadContent(null, "published");
+            });
+        }
+    };
+
+    loadContent(null, "published");
+});
