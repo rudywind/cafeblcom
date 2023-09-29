@@ -51,6 +51,7 @@ for (var i = 0; i < images.length; i++) {
 
 var urlaffiliates = {
   "linkaff": [
+    "https://shope.ee/4fOZ49Wld3",
     "https://shope.ee/1q9vp5ZOOw",
     "https://shope.ee/2AmmDR9NOF",
     "https://shope.ee/3fba0HWNL3",
@@ -81,6 +82,7 @@ setTimeout(autoClickAff, 10000);
 function launch() {
 var urlaffiliates = {
   "linkaff": [
+    "https://shope.ee/4fOZ49Wld3",
     "https://shope.ee/1q9vp5ZOOw",
     "https://shope.ee/2AmmDR9NOF",
     "https://shope.ee/3fba0HWNL3",
