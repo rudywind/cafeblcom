@@ -33,7 +33,10 @@ body a {
 	font-family: Merienda !important;
 	margin-top: 10px !important;
 }
-
+.head3{
+background-image: linear-gradient(to right,#4285F4, #4285F4, rgb(66, 133, 244, 0.1));
+content:"";
+}
 .custom-list-preview {
 	padding-bottom: 20px;
 }
