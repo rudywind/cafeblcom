@@ -1,0 +1,135 @@
+body a {
+	text-decoration: none !important;
+}
+
+#post-body > iframe {
+	width: 100% !important;
+	height: 200px !important;
+	margin-bottom: 1em !important;
+	padding-bottom: 1em !important;
+}
+
+.head2 {
+	font-size: 18px !important;
+	font-weight: 800;
+	border-bottom: 3px solid #4285F4;
+	padding-bottom: 10px;
+	font-family: Merienda !important;
+	margin-top: 10px !important;
+}
+.loading-ads {
+	position: relative;
+	overflow: hidden;
+	background: #eee;
+	opacity: .9;
+	margin: 0px auto;
+}
+
+.loading-ads::before {
+	content: "";
+	background: url("https://blogger.googleusercontent.com/img/a/AVvXsEi5Bw4ak6bBKdEJVt3X6rQwb8OSWXupTVdYdPcoNHfvVuBGJJsoITig-WMysDqc-XFATsshe5v1QNn3RSw2rgKJiZtp09H-EVKOsFSantW3sGuH-kM9QqWKad-07z3dC_zRGucLuv8zDusokMls4uJw11AWtYECU0dc1T-BYtleVAoOUfg5zXJX4_i2");
+	background-size: 50px 60px;
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+
+.loading-ads::after {
+	content: "";
+	background: url("https://1.bp.blogspot.com/-626585Fw-zw/YOS0qQIE4hI/AAAAAAAACz0/CWcptj0cXCUy2jqNFG1j2Ld7U0M6qJkDACLcBGAsYHQ/s1000/ad-loading.gif");
+	background-size: 100% 2px;
+	background-repeat: no-repeat;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+.detail-info ul {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.tvsynopsis {
+	line-height: 1.2;
+}
+
+.rating-series {
+	display: flex;
+	align-items: center;
+}
+
+.rating-series span::after {
+	content: " | ";
+	margin: 0 10px;
+	color: #000;
+}
+
+/* Contoh gaya untuk masing-masing elemen span */
+.rating-series span:last-child::after {
+	content: "";
+}
+
+.imdb::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("https://raw.githubusercontent.com/rudywind/cafeblcom/main/image/imdb.JPG");
+	background-size: 50px 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.imdb {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+	color: orange;
+}
+
+.tmdb::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("https://raw.githubusercontent.com/rudywind/cafeblcom/main/image/tmdb.png");
+	background-size: 50px 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.tmdb {
+	display: inline-block;
+	vertical-align: middle;
+	color: #01b4e4;
+	font-weight: 700;
+}
+
+.mdl::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("https://raw.githubusercontent.com/rudywind/cafeblcom/main/image/mdl.JPG");
+	background-size: 50px 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.mdl {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+	color: #015284;
+}
