@@ -51,6 +51,50 @@ body a {
 	top: 0px;
 	z-index: -1;
 }
+.originalTitle {
+	font-size: 14px;
+	color: gray;
+}
+
+.meta-detail span {
+	font-size: 14px;
+}
+
+.meta-detail span:not(:last-child)::after {
+	content: " ‧ ";
+}
+
+.wtw a:not(:last-child)::after {
+	content: " | ";
+	color: #000;
+}
+
+.tv-trailer-embed {
+	width: 100% !important;
+	height: 200px !important;
+}
+
+@media(min-width:768px) {
+	.tv-trailer-embed {
+		width: 100% !important;
+		height: 360px !important;
+	}
+}
+
+.tvposter {
+	width: 100px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.tvdescription {
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 17px;
+	line-height: 1.2;
+}
 .detail-info ul {
 	list-style: none !important;
 	margin: 0 !important;
