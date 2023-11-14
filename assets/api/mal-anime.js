@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var malId = $('#mal').attr('content');
 	var picturesGallery;
 	$.ajax({
-		url: 'https://cafeblplay.my.id/tmdb/jikan.php?id=' + idValue + '&method=info',
+		url: 'https://mdl.vercel.app/?type=anime&id=' + idValue + '&method=info&',
 		method: 'GET',
 		dataType: 'json',
 		success: function(d) {
@@ -85,7 +85,7 @@ $(document).ready(function() {
 			//STREAMING        
 			// AJAX PICTURES
 			$.ajax({
-				url: 'https://cafeblplay.my.id/tmdb/jikan.php?id=' + idValue + '&method=pictures',
+				url: 'https://mdl.vercel.app/?type=anime&id=' + idValue + '&method=pictures',
 				method: "GET",
 				success: function(p) {
 					if(Array.isArray(p.pictures_data.data) && p.pictures_data.data.length > 4) {
@@ -144,7 +144,7 @@ $(document).ready(function() {
 
 					function fetchCharacterData(callback) {
 						$.ajax({
-							url: 'https://cafeblplay.my.id/tmdb/jikan.php?id=' + idValue + '&method=characters',
+							url: 'https://mdl.vercel.app/?type=anime&id=' + idValue + '&method=characters',
 							method: "GET",
 							success: function(c) {
 								if(Array.isArray(c.characters_data.data) && c.characters_data.data.length > 0) {
@@ -193,7 +193,7 @@ $(document).ready(function() {
 
 					function fetchStaffData(callback) {
 						$.ajax({
-							url: 'https://cafeblplay.my.id/tmdb/jikan.php?id=' + idValue + '&method=staff',
+							url: 'https://mdl.vercel.app/?type=anime&id=' + idValue + '&method=staff',
 							method: "GET",
 							success: function(s) {
 								if(Array.isArray(s.staff_data.data) && s.staff_data.data.length > 0) {
