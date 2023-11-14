@@ -178,6 +178,44 @@ body a {
 	color: #015284;
 }
 
+.mal::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("https://raw.githubusercontent.com/rudywind/cafeblcom/main/image/mal.png");
+	background-size: 50px 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.mal {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+	color: #2E51A2;
+}
+
+.jikan::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("https://raw.githubusercontent.com/rudywind/cafeblcom/main/image/jikan.png");
+	background-size: 50px 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.jikan {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+	color: #2E51A2;
+}	
+
 .gallery-container::-webkit-scrollbar {
 	display: none;
 }
