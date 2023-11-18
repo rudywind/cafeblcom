@@ -15,7 +15,7 @@ function calculateAge(birthDate) {
 var birthDateStr = $("#lahir").text();
 var birthDate = new Date(birthDateStr);
 var age = calculateAge(birthDate);
-$("#usia").text("("+ age + " Tahun)");
+$("#usia").text("("+ age + ")");
 
 function calculateAgeTwo(birthDate) {
   var ageMS = Date.now() - birthDate.getTime();
@@ -35,7 +35,7 @@ window.onload = function() {
       parseInt(birthDateParts[0])
     );
     var age = calculateAgeTwo(birthDate);
-    element.textContent = age + " Tahun";
+    element.textContent = age;
   }
 };
 
