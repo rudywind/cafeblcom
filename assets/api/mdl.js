@@ -23,9 +23,9 @@ $(document).ready(function(){
         return formattedDate;
     }
 
-    var ur = $("#mdl11111111").attr("content"),
-        ty = $("#mdl11111111").attr("type"),
-        sl = $("#mdl11111111").attr("slug");
+    var ur = $("#mldinfo").attr("content"),
+        ty = $("#mldinfo").attr("type"),
+        sl = $("#mldinfo").attr("slug");
     const apiUrl = 'https://mdl.vercel.app?id=' + ur + '&type=all&slug=' + sl;
 
     $.ajax({
@@ -138,13 +138,13 @@ $(document).ready(function(){
                 galleryHtmlBackdrop = '<div class="gallery-container"><div class="gallery">' + imagesBackdrop + '</div></div>';
             }
 
-            var htmlContent = '<div class="tvcontainer" itemscope itemtype="https://schema.org/TVSeries"><h1 itemprop="name" class="mt-0 mb-0 h2">' + title + ' (' + year + ')</h1><div class="meta-detail text-secondary"><span itemprop="countryOfOrigin">' + country + '</span><span itemprop="type">' + type + '</span><span itemprop="status">' + status + '</span></div>    ' + galleryHtmlBackdrop + '<div class="media d-flex align-items-center"><img itemprop="image" src="' + poster + '" alt="' + title + '" class="me-3 rounded shadow tvposter border"><div class="media-body"><div class="tvdescription" itemprop="description">' + synopsis + '</div></div></div>' + (full_synopsis || "") + '<div class="detail-info mt-3"><h2 class="head2">Details</h2><ul class="detail-list text-break"><li><strong>Title: </strong>' + title + '</li><li><strong>Original Title: </strong>' + (original_title || "-") + '</li><li><strong>Also Known As: </strong>' + (alt_title || "-") + '</li>' + tayang + '<li><b>No. Episodes: </b>'+(episode || "-")+'</li><li><strong>Duration: </strong>' + (runtime + " Minutes" || "-") + '</li><li><b>Spoken Language: </b>'+language+'</li><li><strong>Genres: </strong>' + genre + '</li><li><strong>Tags: </strong>' + keyword + '</li><li><b>Content Rating: </b>'+certification+'</li></ul></div>' + AllProviders + '<div>' + castContainerHtml + '</div>' + crewContainerHtml + '</div>';
+            var htmlContent = '<div class="tvcontainer" itemscope itemtype="https://schema.org/TVSeries"><h1 itemprop="name" class="mt-0 mb-0 h2">' + title + ' (' + year + ')</h1><div class="meta-detail text-secondary"><span itemprop="countryOfOrigin">' + country + '</span><span itemprop="type">' + type + '</span><span itemprop="status">' + status + '</span></div>    ' + galleryHtmlBackdrop + '<div class="media d-flex align-items-center"><img itemprop="image" src="' + poster + '" alt="' + title + '" class="me-3 mr-3 rounded shadow tvposter border"><div class="media-body"><div class="tvdescription" itemprop="description">' + synopsis + '</div></div></div>' + (full_synopsis || "") + '<div class="detail-info mt-3"><h2 class="head2">Details</h2><ul class="detail-list text-break"><li><strong>Title: </strong>' + title + '</li><li><strong>Original Title: </strong>' + (original_title || "-") + '</li><li><strong>Also Known As: </strong>' + (alt_title || "-") + '</li>' + tayang + '<li><b>No. Episodes: </b>'+(episode || "-")+'</li><li><strong>Duration: </strong>' + (runtime + " Minutes" || "-") + '</li><li><b>Spoken Language: </b>'+language+'</li><li><strong>Genres: </strong>' + genre + '</li><li><strong>Tags: </strong>' + keyword + '</li><li><b>Content Rating: </b>'+certification+'</li></ul></div>' + AllProviders + '<div>' + castContainerHtml + '</div>' + crewContainerHtml + '</div>';
             $('#loading-overlay').fadeOut();
-            $("#mdl00000000").html(htmlContent);
+            $("#mdlresult").html(htmlContent);
         },
         error: function() {
             $('#loading-overlay').fadeOut();
-            $("#mdl00000000").html("Error fetching data");
+            $("#mdlresult").html("Error fetching data");
         }
     });
 }); 
