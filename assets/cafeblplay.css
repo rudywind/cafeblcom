@@ -216,10 +216,6 @@ body a {
 	color: #2E51A2;
 }	
 
-.gallery-container::-webkit-scrollbar {
-	display: none;
-}
-
 .casts-container,.externalLink,.gallery-container,.watch_provider {
 	width: 100%;
 	overflow: auto;
