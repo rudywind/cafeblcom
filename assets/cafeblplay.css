@@ -227,7 +227,7 @@ body a {
 }
 
 .gallery-item {
-	height: 130px;
+	height: auto;
 	flex: 0 0 auto;
 	margin-right: 10px;
 }
