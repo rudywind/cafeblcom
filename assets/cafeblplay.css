@@ -214,7 +214,26 @@ body a {
 	vertical-align: middle;
 	font-weight: 700;
 	color: #2E51A2;
-}	
+}
+
+.okru::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-image: url("https://play-lh.googleusercontent.com/AmPk1bWSXcrQw6IOvLyfNZFhB_f_TH-PEBQjW0H7eiF538X3LHO7HlpFWaDOP-p__Q");
+	background-size: 50px 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.okru {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 700;
+	color: #2E51A2;
+}
 
 .casts-container,.externalLink,.gallery-container,.watch_provider {
 	width: 100%;
